@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" />
+
+
+    <body>
+        <header>
+            <img class="logo" src="mylogo.png" alt="logo">
+            
+            <nav class="menu">
+                <ul class="mybutton">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://www.linkedin.com/in/lhynneconcepcion/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/lhynne-c" target="_blank">Github</a></li>
+                    <li><a href="https://www.credly.com/users/rollylhynne_concepcion/badges" target="_blank">Badges</a></li>
+                    <li><a href="Rolly Lhynne Concepcion xx.pdf"  target="_blank" >CV</a></li>
+                    <li><a href="contact.html">Contact Me!</a></li>
+                </ul>
+                
+
+        
+        </header>
+        
+        
+    <div class="about_profile_container">
+        <ul>
+            <br>
+            <br>
+            
+            <div class="form">
+                <form action="https://formsubmit.co/lhynne.concepcion@gmail.com" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text"id="name" autocomplete="off" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                    <label for="message">Message:</label>
+                    <textarea name="message"  id="" cols="30" rows="10"></textarea >
+                    <button class="btn" id="send">Send Message</button>
+                   
+             </form>
+            </div>
+
+
+    </div>
+
+    </body>
+
+    
+    <div class="leftside">
+        <img class="logo1" src="lyn4.JPG" alt="Lhynne">
+        <h1>ROLLY LHYNNE CONCEPCION </h1>
+        <h2>
+        <ul>
+            <li>Experienced Technical Support</li><br>
+            <li>Web Developer</li><br>
+            <li>Aspiring Data Scientist</li>
+        </h2>
+    </div>  
+    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+
+        function sendEmail(){
+            Email.send({
+                SecurityToken: "6736d364-34f5-48d7-98f0-82a2b858bf05",
+                To : 'lhynne.concepcion@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form",
+                Body : document.getElementById("message").value + document.getElementById("name").value + document.getElementById("email").value
+            }).then(
+            message => alert("Thank you for your email. I will reach out to you as soon as I can!")
+            );
+        }
+
+
+    </script>
+    
+
+
+    
+    </head>
+    
+    
+
